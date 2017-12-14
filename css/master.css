@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto:100,300,400,500,700');
+
+body {
+  min-width: 430px;
+}
+
+#mc-topbar {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  min-width: 430px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #e5e8ed;
+}
+
+#top {
+  width: 100%;
+  height: 120px;
+
+  border: 0 !important;
+}
+
+#top .mc-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+#top .mc-inner .mc-title {
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 34pt;
+  color: #000000;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#top ul {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+#top ul li {
+  padding-left: 0 !important;
+}
+
+#top ul a {
+  background-color: rgb(237, 237, 237);
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.content {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.items li{
+  position: relative;
+  width: 49%;
+  height: 380px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-top: 6px;
+  background-color: rgb(254, 254, 254);
+  border-radius: 4px;
+
+  -webkit-box-shadow: 2px 2px 5px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 5px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px -3px rgba(0, 0, 0, 0.1);
+}
+
+.items li:nth-child(odd) {
+    float: left;
+}
+.items li:nth-child(even) {
+    float: right;
+}
+
+.items .mc-thumbnail {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 170px;
+  margin-bottom: 9px;
+  overflow: hidden;
+}
+
+.items .mc-thumbnail img {
+  position: absolute;
+  width: 100%;
+  min-height: 170px;
+  max-height: 250%;
+  top: -50%;
+  bottom: -50%;
+}
+
+
+.items .mc-thumbnail img:hover {
+  zoom: 1;
+  filter: alpha(opacity=98);
+  opacity: 0.98;
+ }
+
+.items .mc-description {
+  display: block;
+  width: 100%;
+  height: 290px;
+  padding: 0px 15px 0px 15px;
+  color: #282828;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.items .mc-description.mc-short {
+  height: 110px;
+}
+
+
+
+.items footer{
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  padding: 0 !important;
+}
+
+.items:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.blinking-cursor {
+  position: relative;
+  top: -2px;
+  font-weight: 100;
+  font-size: 36px;
+  color: #000000;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wellformated {
+  text-align: justify;
+}
+
+.wellformated p {
+  text-indent: 30px;
+}
+
+.mg-h1 {
+    padding: 30px 0 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .items li {
+      float: none !important;
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    #bottom ul,
+    #bottom small {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+    }
+
+    #bottom ul li {text-align: center;}
+}
+
+@media only screen and (max-width: 620px) {
+    .items li {
+      float: none !important;
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+	#top ul {
+		position: absolute;
+		top: 10px;
+		right: -40px;
+	}
+
+	#tray aside {display: none;}
+
+	#tray #search {width: 100%;}
+
+	#tray #search input {width: 100%;}
+
+  .main-wrap .content.wrap,
+  .main-wrap .commentform.wrap {
+    width: 90%;
+  }
+
+  .main-wrap .content.wrap .wellformated p {
+    text-indent: 15px;
+  }
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}

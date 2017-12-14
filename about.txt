@@ -1,0 +1,4 @@
+Theme name:    Mais Contos
+Description:   Mais Contos Blog main template.
+Author name:   Mário Garrido
+Author site:   http://mariogarrido.pt
