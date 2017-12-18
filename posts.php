@@ -26,7 +26,7 @@
 					</div>
 
 					<footer>
-						Publicado á <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> por <?php echo article_author('real_name'); ?>.
+						Publicado há <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> por <?php echo article_author('real_name'); ?>.
 					</footer>
 				</article>
 			</li>
